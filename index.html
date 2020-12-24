@@ -1,0 +1,331 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- BOX ICONS -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./img/header_img.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/lightslider.css" />
+    <script type="text/javascript" src="./js/JQuery3.3.1.js"></script>
+    <script type="text/javascript" src="./js/lightslider.js"></script>
+    <script
+      src="https://kit.fontawesome.com/0a5b7e7c70.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Sport Shop</title>
+  </head>
+  <body id="body-pd">
+    <!-- HEADER -->
+    <header class="header" id="header">
+      <div class="header_toggle">
+        <i class="bx bx-menu" id="header_toggle"></i>
+      </div>
+      <div class="header_img">
+        <img src="./img/header_img.png" alt="header_logo" />
+      </div>
+    </header>
+
+    <div class="l-navbar color2" id="nav-bar">
+      <nav class="nav">
+        <div class="nav_logo">
+          <i class="bx bx-layer nav_logo-icon"></i>
+          <span class="nav_logo-name">Sport Shop</span>
+        </div>
+        <div class="nav_list">
+          <a href="#" class="nav_link active">
+            <i class="bx bx-home-alt nav_icon"></i>
+            <span class="nav_name">Home</span>
+          </a>
+          <a href="#PRD" class="nav_link">
+            <i class="bx bx-shopping-bag nav_icon"></i>
+            <span class="nav_name">Products</span>
+          </a>
+          <a href="#news" class="nav_link">
+            <i class="bx bx-news nav_icon"></i>
+            <span class="nav_name">News</span>
+          </a>
+
+          <a href="#footer" class="nav_link">
+            <i class="bx bx-help-circle nav_icon"></i>
+            <span class="nav_name">Contact Us</span>
+          </a>
+        </div>
+        <a href="#" onclick="myFunction()" class="nav_link">
+          <i class="bx bx-log-out"></i>
+          <span class="nav_name">Log Out</span>
+        </a>
+        <div id="snackbar">You Are Out!<i class="fas fa-check-circle"></i></div>
+      </nav>
+    </div>
+    <!-- HEADER -->
+    <!-- container -->
+
+    <div class="content">
+      <div class="box1">
+        <h1>Shop Name</h1>
+        <h1>not only <span class="color1">shop</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, iure
+          nulla error id quas debitis, molestias ea repellat iusto voluptate
+          illum aperiam ut atque, cupiditate nostrum. Ipsa nostrum accusamus
+          tempora. Animi reiciendis, unde voluptatum architecto vero quod
+          officia harum cum, cupiditate ut adipisci commodi, corrupti
+          exercitationem sed explicabo culpa temporibus.
+        </p>
+        <a class="box1_a linnk" href="#footer">learn more</a>
+      </div>
+      <div class="box2">
+        <ul>
+          <li>
+            <img
+              class="small_img"
+              src="./img/img1.png"
+              onclick="imgSlider('./img/img1.png'); changeBackColor('#291C5B')"
+            />
+          </li>
+          <li>
+            <img
+              class="small_img"
+              src="./img/img2.png"
+              onclick="imgSlider('./img/img2.png'); changeBackColor('#000000')"
+            />
+          </li>
+          <li>
+            <img
+              class="small_img"
+              src="./img/img3.webp"
+              onclick="imgSlider('./img/img3.webp'); changeBackColor('#D1002C')"
+            />
+          </li>
+        </ul>
+        <img
+          class="content_img"
+          src="./img/c80bf591191376839a0614e2e3d02f2f.png"
+        />
+      </div>
+    </div>
+    <div id="PRD"></div>
+    <h1 class="product_h1">Trending Now</h1>
+
+    <ul id="autoWidth" class="cs-hidden">
+      <li class="item-a">
+        <div class="product">
+          <div class="product_section">
+            <div class="product_img">
+              <img src="./img/p1.jpg" alt="" />
+              <div class="overlay">
+                <a href="#" class="buy-btn">buy now</a>
+              </div>
+            </div>
+            <div class="product_detail">
+              <div class="product_type">
+                <a href="#">Lorem, ipsum dolor.</a>
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+              <a href="" class="product_prize">23$</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="item-a">
+        <div class="product">
+          <div class="product_section">
+            <div class="product_img">
+              <img src="./img/p2.jpg" alt="" />
+              <div class="overlay">
+                <a href="#" class="buy-btn">buy now</a>
+              </div>
+            </div>
+            <div class="product_detail">
+              <div class="product_type">
+                <a href="#">Lorem, ipsum dolor.</a>
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+              <a href="" class="product_prize">23$</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="item-a">
+        <div class="product">
+          <div class="product_section">
+            <div class="product_img">
+              <img src="./img/p3.jpg" alt="" />
+              <div class="overlay">
+                <a href="#" class="buy-btn">buy now</a>
+              </div>
+            </div>
+
+            <div class="product_detail">
+              <div class="product_type">
+                <a href="#">Lorem, ipsum dolor.</a>
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+              <a href="" class="product_prize">23$</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="item-a">
+        <div class="product">
+          <div class="product_section">
+            <div class="product_img">
+              <img src="./img/p4.jpg" alt="" />
+              <div class="overlay">
+                <a href="#" class="buy-btn">buy now</a>
+              </div>
+            </div>
+
+            <div class="product_detail">
+              <div class="product_type">
+                <a href="#">Lorem, ipsum dolor.</a>
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+              <a href="" class="product_prize">23$</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="item-a">
+        <div class="product">
+          <div class="product_section">
+            <div class="product_img">
+              <img src="./img/p5.jpg" alt="" />
+              <div class="overlay">
+                <a href="#" class="buy-btn">buy now</a>
+              </div>
+            </div>
+
+            <div class="product_detail">
+              <div class="product_type">
+                <a href="#">Lorem, ipsum dolor.</a>
+                <span>Lorem ipsum dolor sit amet.</span>
+              </div>
+              <a href="" class="product_prize">23$</a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <div id="news" class="news">
+      <div class="news_container">
+        <h2>New <span>Products</span></h2>
+
+        <div id="myBtnContainer" class="btn_container">
+          <button class="new_btn new_active" onclick="filterSelection('all')">
+            Show all shoes
+          </button>
+          <button class="new_btn" onclick="filterSelection('runnig')">
+            runnig
+          </button>
+          <button class="new_btn" onclick="filterSelection('basketball')">
+            basketball
+          </button>
+          <button class="new_btn" onclick="filterSelection('football')">
+            football
+          </button>
+          <button class="new_btn" onclick="filterSelection('jordan')">
+            jordan
+          </button>
+        </div>
+
+        <div class="new_container">
+          <div class="filterDiv runnig">
+            <img class="new_img" src="./img/r2.jpg" alt="" />
+          </div>
+
+          <div class="filterDiv jordan">
+            <img class="new_img" src="./img/j2.jpg" alt="" />
+          </div>
+          <div class="filterDiv runnig">
+            <img class="new_img" src="./img/r1.jpg" alt="" />
+          </div>
+          <div class="filterDiv jordan">
+            <img class="new_img" src="./img/j3.jpg" alt="" />
+          </div>
+          <div class="filterDiv basketball">
+            <img class="new_img" src="./img/b2.jpg" alt="" />
+          </div>
+          <div class="filterDiv football">
+            <img class="new_img" src="./img/f2.jpg" alt="" />
+          </div>
+          <div class="filterDiv jordan">
+            <img class="new_img" src="./img/j4.jpg" alt="" />
+          </div>
+          <div class="filterDiv runnig">
+            <img class="new_img" src="./img/r5.jpg" alt="" />
+          </div>
+          <div class="filterDiv basketball">
+            <img class="new_img" src="./img/b3.jpg" alt="" />
+          </div>
+          <div class="filterDiv football">
+            <img class="new_img" src="./img/f3.jpg" alt="" />
+          </div>
+          <div class="filterDiv football">
+            <img class="new_img" src="./img/f4.jpg" alt="" />
+          </div>
+          <div class="filterDiv basketball">
+            <img class="new_img" src="./img/b4.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="fbox1">
+        <div class="flists">
+          <ul class="flists1">
+            <li>GIFT CARDS</li>
+            <li>FIND A STORE</li>
+            <li>SIGN UP FOR EMAIL</li>
+            <li>BECOME A MEMBER</li>
+            <li>STUDENT DISCOUNT</li>
+            <li>SEND US FEEDBACK</li>
+          </ul>
+          <ul class="flists2">
+            <li><span>GET HELP</span></li>
+            <li>order status</li>
+            <li>shipping</li>
+            <li>returns</li>
+            <li>contact</li>
+            <li>modern app</li>
+          </ul>
+        </div>
+        <div class="ficons">
+          <ul>
+            <li><i class="fab fa-twitter-square"></i></li>
+            <li class="fas"><i class="fab fa-facebook-square"></i></li>
+            <li class="fas"><i class="fab fa-youtube"></i></li>
+            <li class="fas"><i class="fab fa-instagram-square"></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="fbox2">
+        <ul>
+          <li><i class="fas fa-map-marker"></i><span> United Kingdom</span></li>
+          <li>© 2020 Nike, Inc. All Rights Reserved</li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./js/nav.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
